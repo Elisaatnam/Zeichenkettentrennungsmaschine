@@ -20,12 +20,12 @@
         </div>
         <form onsubmit="return playSoundAndCut()">
           <label for="sentence">Zu trennende Zeichenkette</label>
-          <input type="text" id="sentence" placeholder="Text eingeben..." />
+          <input type="text" id="sentence" placeholder="Text eingeben..." required/>
           <label for="cutWord">Trennen bei Zeichenkette:</label>
           <input
             type="text"
             id="cut-word"
-            placeholder="Bei diesem Wort trennen..."
+            placeholder="Bei diesem Wort trennen..." required
           />
           <div class="radio-div">
             <input type="radio" name="cutPositon" id="cut-before" value="davor" checked/>
@@ -34,6 +34,7 @@
             <label for="cut-after">danach trennen</label>
           </div>
           <button type="submit">🪚</button>
+          <button type="reset" onclick="location.reload();">Eingabe zurücksetzen</button>
         </form>
         <h2>Ausgabe</h2>
         <section>

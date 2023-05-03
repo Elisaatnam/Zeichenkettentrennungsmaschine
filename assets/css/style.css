@@ -68,12 +68,27 @@ button {
 	margin-bottom: 2vh;
 }
 
-button {
+button[type="submit"] {
 	border: none;
 	background: none;
 	font-size: 5vw;
+	transition: font-size 0.25s ease-in-out;
 }
-
+button[type="submit"]:hover {
+	font-size: 5.5vw;
+	cursor: pointer;
+}
+button[type="reset"] {
+	padding: 1vh 1vw;
+	width: 10vw;
+	background: none;
+	align-self: center;
+}
+button[type="reset"]:hover {
+	background: #023047;
+	color: white;
+	cursor: pointer;
+}
 /* H1 */
 h1 {
 	font-size: 4.5vw;

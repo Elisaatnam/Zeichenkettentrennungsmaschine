@@ -1,10 +1,10 @@
-const outputBefore = document.querySelector(".output-before");
-const outputAfter = document.querySelector(".output-after");
-
 function makeSound() {
 	const chainsawSound = new Audio("../assets/sounds/ChainSaw.m4a");
 	chainsawSound.play();
 }
+
+const outputBefore = document.querySelector(".output-before");
+const outputAfter = document.querySelector(".output-after");
 
 function cut() {
 	const textInput = document.querySelector("#sentence").value + " ";
