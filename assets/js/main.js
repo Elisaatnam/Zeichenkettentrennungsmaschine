@@ -1,5 +1,5 @@
 function makeSound() {
-	const chainsawSound = new Audio("../assets/sounds/ChainSaw.m4a");
+	const chainsawSound = new Audio("../assets/sounds/ChainSaw.mp3");
 	chainsawSound.play();
 }
 
